@@ -37,27 +37,27 @@ var canvasDots = function() {
     }
 
     Dot.prototype = {
-        create: function(){
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fill();
+        create: function() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            ctx.fill();
         },
 
-    animate: function(){
+    animate: function() {
         for(i = 0; i < dots.nb; i++){
 
-        var dot = dots.array[i];
+            var dot = dots.array[i];
 
-        if(dot.y < 0 || dot.y > canvas.height){
-            dot.vx = dot.vx;
-            dot.vy = - dot.vy;
-        }
-        else if(dot.x < 0 || dot.x > canvas.width){
-            dot.vx = - dot.vx;
-            dot.vy = dot.vy;
-        }
-        dot.x += dot.vx;
-        dot.y += dot.vy;
+            if(dot.y < 0 || dot.y > canvas.height){
+                dot.vx = dot.vx;
+                dot.vy = - dot.vy;
+            }
+            else if(dot.x < 0 || dot.x > canvas.width){
+                dot.vx = - dot.vx;
+                dot.vy = dot.vy;
+            }
+            dot.x += dot.vx;
+            dot.y += dot.vy;
         }
     },
 
