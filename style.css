@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
 html, body{
@@ -16,14 +17,20 @@ canvas{
 
 
 h1, h3, h4, h5{
-    font-family: 'Nixie One', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     text-align: center; 
     color: black; 
 }
 
+h1 {
+    font-size: 3rem;
+    text-shadow: 2 2 5rem rgba(0, 0, 0, 0.534);
+    font-weight: bolder;
+}
+
 
 h3, h4, h5{
-    color: #CACFD2; 
+    color: rgb(216, 216, 216); 
 }
 
 h4{
@@ -70,10 +77,10 @@ hr{
 #terminal{
     height: 30rem;
     width: 45rem;
-    background: black; 
+    background: rgb(31, 31, 31); 
     border: 1px solid #252525;
     border-radius: 0.5rem;
-    box-shadow: 0 0 4rem rgba(0,0,0,0.4);
+    box-shadow: 4 4 2rem rgba(0, 0, 0, 0.685);
 }
   
 
@@ -135,19 +142,23 @@ hr{
 }
 
 .home{
-    color: #E74C3C; 
+    color: rgb(23, 141, 131); 
 }
 
 .content{
     color: #A9DFBF;
 }
 
+.team{
+    color: rgb(241, 241, 241);
+}
+
 .key{
-    color: #F9E79F; 
+    color: rgb(255, 226, 95); 
 }
 
 .job{
-    color: #7FB3D5; 
+    color: rgb(123, 98, 190); 
 }
 
 a{
@@ -158,8 +169,8 @@ a{
     font-weight: 100;
     font-size: 25px;
     color:white;
-    animation: 1s blink step-end infinite;
-    -webkit-animation: 1s blink step-end infinite;
+    animation: 0.8s blink step-end infinite;
+    -webkit-animation: 0.8s blink step-end infinite;
   }
 
 
