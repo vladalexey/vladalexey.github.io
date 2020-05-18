@@ -1,14 +1,14 @@
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'), 
     ctx = canvas.getContext('2d'),
-    colorDot = '#000000',
-    color = '#000000';
+    colorBackground = '#000000',
+    colorWhite = '#ffffff';
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     canvas.style.display = 'block';
-    ctx.fillStyle = colorDot;
+    ctx.fillStyle = colorBackground;
     ctx.lineWidth = .1;
-    ctx.strokeStyle = color;
+    ctx.strokeStyle = colorWhite;
 
 
     // Get mouse positions 
@@ -40,6 +40,7 @@ var canvasDots = function() {
         create: function() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            ctx.fillStyle = colorWhite;
             ctx.fill();
         },
 
@@ -85,15 +86,20 @@ var canvasDots = function() {
 
 
     // Function to create the dots 
-    function createDots(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for(i = 0; i < dots.nb; i++){
-        dots.array.push(new Dot());
-        dot = dots.array[i];
-        dot.create();
-    }
-        dot.line();
-        dot.animate();
+    function createDots() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // Background color
+        ctx.beginPath();
+        ctx.rect(0, 0, window.innerWidth, window.innerHeight);
+        ctx.fillStyle = colorBackground;
+        ctx.fill();
+        for(i = 0; i < dots.nb; i++){
+            dots.array.push(new Dot());
+            dot = dots.array[i];
+            dot.create();
+        }
+            dot.line();
+            dot.animate();
     }
 
     window.onmousemove = function(parameter) {
