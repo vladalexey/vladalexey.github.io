@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+html, body{
+    margin: 0; 
+}
+
+/* Global CSS styles */ 
+canvas{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -100;
+}
+
+
+h1, h3, h4, h5{
+    font-family: 'Nixie One', sans-serif; 
+    text-align: center; 
+    color: black; 
+}
+
+
+h3, h4, h5{
+    color: #CACFD2; 
+}
+
+h4{
+    font-size: 0.7rem; 
+}
+
+p{
+    font-family: sans-serif; 
+    color: #CACFD2; 
+    font-size: 0.85rem; 
+    display: inline-block;
+    margin-bottom: 0px !important; 
+    margin-top: 0px !important; 
+    color: white; 
+}
+
+
+hr{
+    /* width: 70%;  */
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* ---- INTRO CSS ------ */ 
+#intro{
+    margin-top: 5%; 
+}
+
+
+/* Container for terminal */ 
+#container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    background: #fff; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%; 
+}
+
+
+/* Terminal content */ 
+#terminal{
+    height: 30rem;
+    width: 45rem;
+    background: black; 
+    border: 1px solid #252525;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4rem rgba(0,0,0,0.4);
+}
+  
+
+/* Space bar */ 
+#window-bar{
+    width: 100%; 
+    height: 2rem; 
+    border-bottom: 1px solid #252525;
+    flex-direction: row; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+#window-buttons{
+    padding-top: 0.5rem; 
+    padding-left: 0.5rem; 
+}
+
+
+/* Window close, maximize and minimize */ 
+.btn{
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.close {
+    background-color: #ff3b30;
+}
+
+.minimize{
+    background-color: #ffcc00;
+}
+
+.maximize{
+    background-color: #28cd41
+}
+
+.title{
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-right: 21rem; 
+    padding-top: 0.4rem; 
+}
+
+
+#terminal-content{
+    padding: 1rem; 
+}
+
+#terminal-content span{
+    display: block; 
+}
+
+.home{
+    color: #E74C3C; 
+}
+
+.content{
+    color: #A9DFBF;
+}
+
+.key{
+    color: #F9E79F; 
+}
+
+.job{
+    color: #7FB3D5; 
+}
+
+a{
+    color: white; 
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 25px;
+    color:white;
+    animation: 1s blink step-end infinite;
+    -webkit-animation: 1s blink step-end infinite;
+  }
+
+
+@keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+
+  @-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+
+#footer{
+    position: fixed;
+    bottom: 3rem;
+    text-align: center;  
+    font-family: 'Nixie One', sans-serif;
+    color: #CACFD2; 
+    font-size: 0.7rem; 
+}
+
+.center{
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
