@@ -174,7 +174,7 @@ hr {
 }
 
 .home {
-    color: rgb(23, 141, 131);
+    color: rgb(87, 235, 46);
 }
 
 .content {
@@ -186,15 +186,19 @@ hr {
 }
 
 .key {
-    color: rgb(255, 226, 95);
-}
+    color: rgb(45, 211, 223);
+}   
 
 .job {
-    color: rgb(123, 98, 190);
+    color: rgb(154, 169, 255);
+}
+
+a:hover {
+    color: red;
 }
 
 a {
-    color: white;
+    color: rgb(45, 211, 223);
 }
 
 .blinking-cursor {
