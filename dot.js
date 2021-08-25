@@ -19,7 +19,7 @@ var canvasDots = function () {
 
 
     var dots = {
-        nb: 550,
+        nb: 100 + Math.max(canvas.width, canvas.height) * 0.3,
         distance: 80,
         d_radius: 250,
         array: []
