@@ -54,7 +54,7 @@ p {
     font-family: sans-serif;
     color: #CACFD2;
     padding: 2px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: inline-block;
     margin-bottom: 0px !important;
     margin-top: 0px !important;
@@ -87,7 +87,7 @@ hr {
 
 /* Terminal content */
 #terminal {
-    height: 50vh;
+    height: 60vh;
     width: 60vw;
     max-height: 600px;
     max-width: 1200px;
