@@ -22,6 +22,7 @@ canvas {
 
 
 h1,
+h2,
 h3,
 h4,
 h5 {
@@ -35,6 +36,16 @@ h1 {
     font-weight: 900;
     padding: 5px;
     font-size: 4rem;
+    text-shadow: 2 2 5rem rgb(0, 0, 0);
+    font-weight: bolder;
+    color: white;
+}
+
+h2 {
+    font-family: 'Darker Grotesk', sans-serif;
+    font-weight: 800;
+    padding: 5px;
+    font-size: 2rem;
     text-shadow: 2 2 5rem rgb(0, 0, 0);
     font-weight: bolder;
     color: white;
@@ -323,10 +334,20 @@ a {
     margin: 0 auto;
 }
 
+.zoom-role {
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
 .zoom-terminal:hover {
     transform: scale(1.02);
 }
 
 .zoom-name:hover {
     transform: scale(1.1);
+}
+
+.zoom-rol:hover {
+    transform: scale(1.03);
 }
